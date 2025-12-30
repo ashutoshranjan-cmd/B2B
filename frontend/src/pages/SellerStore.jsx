@@ -121,9 +121,9 @@ export default function SellerStore() {
   const topProducts = products.slice(0, 5);
 
   const reviews = [
-    { name: "Rajesh Kumar", rating: 5, text: "Excellent quality products and fast delivery. Highly recommended!", location: "Mumbai" },
-    { name: "Priya Sharma", rating: 5, text: "Great service and very professional. Will definitely order again.", location: "Delhi" },
-    { name: "Amit Patel", rating: 4, text: "Good products at competitive prices. Customer support is helpful.", location: "Ahmedabad" },
+    { name: "Shivam Mandal", rating: 5, text: "Excellent quality products and fast delivery. Highly recommended!", location: "Mumbai" },
+    { name: "Rupendra Kumar", rating: 5, text: "Great service and very professional. Will definitely order again.", location: "Delhi" },
+    { name: "Ashutosh Ranjan", rating: 4, text: "Good products at competitive prices. Customer support is helpful.", location: "Ahmedabad" },
     { name: "Sneha Reddy", rating: 5, text: "Outstanding experience! Products exactly as described.", location: "Bangalore" }
   ];
 
