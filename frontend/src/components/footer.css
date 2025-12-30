@@ -1,0 +1,82 @@
+.discoverButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+  padding: 14px 30px;
+  background-color: #0C59DB;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  position: relative;       
+  overflow: hidden;        
+  z-index: 1;               
+  transition: color 0.4s ease;
+  border: 1px solid #2563eb; /* Optional: to match .btn border */
+}
+
+.discoverButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #031833;
+  z-index: -1;
+  transition: left 0.4s ease;
+}
+
+.discoverButton:hover::before {
+  left: 0;
+}
+
+.subscribe-form {
+  display: flex;
+  border: 1px solid #ffffff33;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 110%; /* Ensure full width */
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #1e2a44;
+  color: #fff;
+  font-size: 16px;
+  min-width: 0; /* Allow input to shrink */
+}
+
+.subscribe-form button {
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+.subscribe-form button:hover {
+  background-color: #0097a7;
+}
+
+
+.social-icons svg {
+  margin-left: 16px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #cbd5e1;
+  transition: color 0.3s;
+}
+
+.social-icons svg:hover {
+  color: #00bcd4;
+}
