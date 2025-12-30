@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: 'https://b2b-1-e2v4.onrender.com',
+    origin: 'https://b2b-b.netlify.app',
     credentials: true,
   })
 );
