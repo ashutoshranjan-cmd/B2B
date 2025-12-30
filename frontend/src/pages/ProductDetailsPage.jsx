@@ -284,7 +284,7 @@ export default function ProductDetailsPage() {
                         ))}
                     </div>
                 )}
-                {/* <Link
+                <Link
                     to={`${import.meta.env.VITE_LINK}/store/${product.subDomain}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -292,17 +292,8 @@ export default function ProductDetailsPage() {
                 >
                     More products from this seller
                     <ExternalLink size={16} />
-                </Link> */}
-                <a
-                    href={`${import.meta.env.VITE_LINK}/store/${product.subDomain}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-600 hover:underline mt-2"
-                >
-                    More products from this seller
-                    <ExternalLink size={16} />
-                </a>
-
+                </Link>
+            
             </div>
 
             {/* Enquiry Modal */}

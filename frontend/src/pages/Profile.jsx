@@ -189,7 +189,7 @@ export default function Profile() {
                                     <div className="border-t border-slate-100 pt-6">
                                         <p className="text-xs text-slate-500 uppercase tracking-wide mb-3 font-medium">Store Link</p>
                                         <Link
-                                            to={`${import.meta.env.VITE_LINK}/store/${company.subDomain
+                                            to={`/store/${company.subDomain
                                                 .toLowerCase()
                                                 .replace(/\s+/g, "-")}`}
                                             target="_blank"
@@ -197,7 +197,7 @@ export default function Profile() {
                                             className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 bg-blue-50 hover:bg-blue-100 px-4 py-2 rounded-lg transition-colors group"
                                         >
                                             <span className="font-medium text-sm">
-                                               `{import.meta.env.VITE_LINK}/store/{company.subDomain
+                                               `/store/{company.subDomain
                                                 .toLowerCase()
                                                 .replace(/\s+/g, "-")}`
                                             </span>
