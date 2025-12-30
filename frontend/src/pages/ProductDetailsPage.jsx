@@ -21,10 +21,10 @@ export default function ProductDetailsPage() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [openEnquiry, setOpenEnquiry] = useState(false);
     const [loading, setLoading] = useState(true);
-    const [product, setProduct] =  useState(null);
+    const [product, setProduct] = useState(null);
     console.log("Product ID:", product)
 
-   
+
 
     /**
      * 🤖 Gemini-enriched data (you will fill later)
@@ -284,7 +284,7 @@ export default function ProductDetailsPage() {
                         ))}
                     </div>
                 )}
-                <Link
+                {/* <Link
                     to={`${import.meta.env.VITE_LINK}/store/${product.subDomain}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -292,7 +292,17 @@ export default function ProductDetailsPage() {
                 >
                     More products from this seller
                     <ExternalLink size={16} />
-                </Link>
+                </Link> */}
+                <a
+                    href={`${import.meta.env.VITE_LINK}/store/${product.subDomain}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-600 hover:underline mt-2"
+                >
+                    More products from this seller
+                    <ExternalLink size={16} />
+                </a>
+
             </div>
 
             {/* Enquiry Modal */}
