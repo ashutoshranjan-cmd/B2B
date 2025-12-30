@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: 'https://b2b-b.netlify.app',
+    origin: 'https://b2-b-weld.vercel.app',
     credentials: true,
   })
 );
